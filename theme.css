@@ -9,6 +9,7 @@
 |   Bootstrap Styles
 -----------------------------------------------*/
 /*!
+
  * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
@@ -17747,7 +17748,7 @@ label {
 
 @font-face {
   font-family: "Maven Pro";
-  src: url("../fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf");
+  src: url("MavenPro-VariableFont_wght.ttf");
   font-style: normal;
 }
 
