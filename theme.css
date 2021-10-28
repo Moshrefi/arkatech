@@ -9,7 +9,6 @@
 |   Bootstrap Styles
 -----------------------------------------------*/
 /*!
-
  * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
@@ -3607,23 +3606,23 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #458ff6;
-  border-color: #458ff6;
+  background-color: #69679b;
+  border-color: #69679b;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #3b7ad1;
-  border-color: #3772c5;
+  background-color: #69679b;
+  border-color: #69679b;
 }
 
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: #fff;
-  background-color: #3b7ad1;
-  border-color: #3772c5;
-  -webkit-box-shadow: 0 0 0 0 rgba(97, 160, 247, 0.5);
-  box-shadow: 0 0 0 0 rgba(97, 160, 247, 0.5);
+  background-color: #69679b;
+  border-color: #69679b;
+  -webkit-box-shadow: 0 0 0 0 rgba(218, 168, 241, 0.5);
+  box-shadow: 0 0 0 0 rgba(214, 165, 243, 0.5);
 }
 
 .btn-check:checked + .btn-primary,
@@ -3632,8 +3631,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #3772c5;
-  border-color: #346bb9;
+  background-color: #69679b;
+  border-color: #69679b;
 }
 
 .btn-check:checked + .btn-primary:focus,
@@ -3641,8 +3640,8 @@ fieldset:disabled .btn {
 .btn-primary:active:focus,
 .btn-primary.active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0 rgba(97, 160, 247, 0.5);
-  box-shadow: 0 0 0 0 rgba(97, 160, 247, 0.5);
+  -webkit-box-shadow: 0 0 0 0 rgba(225, 169, 241, 0.5);
+  box-shadow: 0 0 0 0 rgba(205, 156, 238, 0.5);
 }
 
 .btn-primary:disabled,
@@ -17748,7 +17747,7 @@ label {
 
 @font-face {
   font-family: "Maven Pro";
-  src: url("MavenPro-VariableFont_wght.ttf");
+  src: url("../fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf");
   font-style: normal;
 }
 
@@ -18590,10 +18589,10 @@ label {
 .img-width-logo {
   width: 160px;
 }
-@media (max-width:360px){
-.nav-height {
-  height: 127px;
-}
+@media (max-width: 360px) {
+  .nav-height {
+    height: 127px;
+  }
 }
 .nav-bg-color {
   background-color: #fff;
@@ -18627,8 +18626,8 @@ label {
   left: 0px;
   right: 0px;
 }
-.h-680px {
-  height: 680px;
+.h-530px {
+  height: 530px;
 }
 
 .ptb-100 {
@@ -18672,8 +18671,8 @@ label {
 .formthree .btn-primary.focus,
 .formthree .btn-primary:hover {
   background-color: transparent;
-  color: #4285f4;
-  border: 1px solid #4285f4 !important;
+  color: #69679b;
+  border: 1px solid #69679b !important;
 }
 
 .footer {
@@ -18686,5 +18685,33 @@ label {
 }
 .icon-size-26 {
   font-size: 26px;
+}
+.img-with-footer {
+  width: 26px;
+}
+.form-control::-webkit-input-placeholder,
+.form-control:-moz-placeholder,
+.form-control::-moz-placeholder,
+.form-control::placeholder {
+  color: #888 !important;
+}
+.tooltip > .tooltip-inner {
+  background-color: #575756;
+  color: #fff;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #575756;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #575756;
+}
+
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #575756;
+}
+
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: gray;
 }
 /* Maryam end */
