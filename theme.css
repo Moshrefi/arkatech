@@ -18599,6 +18599,9 @@ label {
   .d-padding-left-social {
     padding-left: 5.5rem !important;
   }
+  .img-with-footer {
+    width: 24px !important;
+  }
 }
 .nav-bg-color {
   background-color: #fff;
