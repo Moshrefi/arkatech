@@ -18597,7 +18597,7 @@ label {
     height: 610px !important;
   }
   .d-padding-left-social {
-    padding-left: 6.5rem;
+    padding-left: 5.5rem !important;
   }
 }
 .nav-bg-color {
