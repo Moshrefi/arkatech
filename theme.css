@@ -18589,9 +18589,12 @@ label {
 .img-width-logo {
   width: 160px;
 }
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .nav-height {
     height: 127px;
+  }
+  .h-530px {
+    height: 590px !important;
   }
 }
 .nav-bg-color {
@@ -18713,5 +18716,8 @@ label {
 
 .tooltip.bs-tooltip-end .tooltip-arrow::before {
   border-right-color: gray;
+}
+.d-padding-left-social {
+  padding-left: 6.5rem;
 }
 /* Maryam end */
