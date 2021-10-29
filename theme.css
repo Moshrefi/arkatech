@@ -18596,6 +18596,9 @@ label {
   .h-530px {
     height: 610px !important;
   }
+  .d-padding-left-social {
+    padding-left: 6.5rem;
+  }
 }
 .nav-bg-color {
   background-color: #fff;
