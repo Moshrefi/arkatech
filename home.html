@@ -13,23 +13,27 @@
 
 <body>
   <header class="main" id="top">
-    <nav id="navbar" class="navbar nav-height1 navbar-expand-lg navbar-light nav-bg-color fixed-top py-3"
-      data-navbar-on-scroll="data-navbar-on-scroll">
-      <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#"><img
-            class="d-inline-block img-width-logo me-3" src="logo.png" alt="" /></a>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-light nav-bg-color fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#">
+          <img class="d-inline-block img-width-logo me-3" src="assets/img/icons/logo.png" alt="" />
+        </a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-            <li class="nav-item" onclick="closeMenu()" >
+            <li class="nav-item">
               <a class="nav-link scrollto" href="#home">Why ArkaTech</a>
             </li>
-            <li class="nav-item"><a class="nav-link scrollto" onclick="closeMenu()" href="#regions">Regions</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" onclick="closeMenu()" href="#teams">Central Area Team</a>
+            <li class="nav-item"><a class="nav-link scrollto" href="#regions">Regions</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="#teams">Central Area
+                Team</a>
             </li>
-            <li class="nav-item"><a class="nav-link scrollto" onclick="closeMenu()" href="#friends">Friends</a></li>
-            <li class="nav-item"><a class="nav-link scrollto" onclick="closeMenu()" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="#friends">Friends</a></li>
+            <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -389,6 +393,14 @@
   function closeMenu() {
     document.getElementById('navbarSupportedContent').style.display = 'none';
   }
+  
+  // menu close on mobile view
+  const navLinks = document.querySelectorAll('.nav-item')
+  const menuToggle = document.getElementById('navbarSupportedContent')
+  const bsCollapse = new bootstrap.Collapse(menuToggle)
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => { bsCollapse.toggle() })
+  })
 </script>
 
 </html>
